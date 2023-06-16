@@ -1,6 +1,7 @@
 # dao -> data access object 
-import mysql.connector
+
 from sql_connection import get_sql_connection
+
 
 def get_all_product(connection):
     cursor = connection.cursor()
@@ -54,4 +55,4 @@ if __name__=='__main__':
     #     'price_per_unit': '20'    
     #     }))
     
-    print(delete_product(connection, 10))
+    #print(delete_product(connection, 10))
